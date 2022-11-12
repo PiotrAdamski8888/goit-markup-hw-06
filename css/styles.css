@@ -742,19 +742,40 @@ input {
 }
 .label-modal-check {
   display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: inherit;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--ordinary-font-color);
+  align-items: flex-start;
 }
-.label-modal-check>input {
-  .order-service-checkbox>input {
-    display: block;
-    width: 16px;
-    height: 15px;
-    background-image: url(data:image/svg+xml,%3Csvg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15"%3E%3Cpath d="M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z" fill="%23212121"/%3E%3C/svg%3E);
-    background-repeat: no-repeat;
+.modal-check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+  transform: translateY(4px);
+  border: solid 2px var(--main-black);
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:checked + span {
+  background-color: var(--main-blue);
+  border-color: var(--main-blue);
+}
+.modal-submit {
+  background: var(--main-blue);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-white);
+  border: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
