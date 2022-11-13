@@ -390,7 +390,7 @@ li {
   height: 16px;
   fill: var(--main-silver);
   stroke: var(--main-silver);
-  color: #757575;
+  color: var(--main-silver);
 }
 .icon-svg:hover {
   fill: var(--main-blue);
@@ -402,7 +402,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f4fa;
+  background-color: var(--second-white);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -628,7 +628,7 @@ li {
   /*background-color: #ececec;*/
 }
 .join-newsletter {
-  color: white;
+  color: var(--main-white);
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -697,6 +697,9 @@ li {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 20px;
 }
 .input-content {
   display: block;
@@ -753,7 +756,7 @@ input {
   border-radius: 2px;
   margin-right: 8px;
   cursor: pointer;
-  transform: translateY(4px);
+  transform: translateY(17px);
   border: solid 2px var(--main-black);
   transition-property: background-color, border-color;
   transition-duration: 250ms;
@@ -778,4 +781,18 @@ input:checked + span {
   align-items: center;
   justify-content: center;
   margin: auto;
+  cursor: pointer;
+}
+ p > a {
+  text-decoration: none;
+  color: var(--main-blue);
+}
+input:hover, input:focus {
+  border-color: var(--main-blue);
+}
+textarea:hover, textarea:focus {
+  border-color: var(--main-blue);
+}
+input:hover + svg, input:focus + svg {
+  fill: var(--main-blue);
 }
